@@ -1,0 +1,261 @@
+html {
+	padding: 10px max(2px, min(30px, 1.5%));
+	color: #811A43;
+	background-color: #FFDADA;
+	margin: 0px;
+	border: 0px;            
+}
+
+body {
+	background-color: #FFEAEA;
+	padding: 10px 20px;
+	margin: 0px;
+	border: 0px;
+}
+
+body.logo {
+	background-image: url(lablogo.svg), linear-gradient(to bottom, #FFDADA 5.25em, #FFEAEA 5.25em);
+	background-size: auto 3em, auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 4em;
+}
+
+* {
+	font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
+}
+
+ol {
+	padding-left: 3ch;
+}
+
+li.ref {
+	margin-bottom: 0.6em;
+}
+
+a {
+	color: #FF0050;
+}
+
+a:hover:not(.also, .menu) {
+	color: #FFDADA;
+	background-color: #FF0050;
+}
+
+a.also, a.also:hover, details summary, a.home, a.menu {
+	color: #C15A83;
+	text-decoration: none;
+}
+
+a:not(.also, .home, .menu) {
+	background-position: center left;
+	background-size: auto 1em;
+	background-repeat: no-repeat;
+	padding-left: 1em;
+}
+
+a:not(.also, .home, .file, .lab, .acopy, .aslide, .aposter, .asite, .avideo, .menu) {
+	background-image: url(link.svg);
+}
+
+a.file, a.acopy, a.aslide, a.aposter {
+	background-image: url(paper.svg);
+}
+
+a.asite {
+	background-image: url(project.svg);
+}
+
+a.lab {
+	background-size: auto 0.8em;
+	background-image: url(favicon.svg);
+}
+
+a.avideo {
+	background-image: url(play.svg);
+}
+
+span.doi a {
+	overflow-wrap: anywhere;
+}
+
+details summary {
+	cursor: pointer;
+
+	list-style: none;
+	background-position: center left;
+	background-size: auto 1em;
+	background-image: url(open.svg);
+	background-repeat: no-repeat;
+	display: inline-block;
+	padding-left: 1em;
+}
+
+details[open] summary {
+	background-image: url(close.svg);
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+details div.iframe-container, details blockquote.abstract {
+	margin: 0.5em 0px 0.5em 2px;
+	padding: 0px 0px 0px 10px;
+	border-left: 5px solid #FFDADA;
+}
+
+div.iframe-container div {
+	position: relative;
+	display: block;
+	width: min(100%, 800px);
+	padding-bottom: min(56.25%, 450px);
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+div.iframe-container iframe {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+blockquote p {
+	text-indent: 0.5cm;
+	margin: 0px;
+	padding: 0px;
+}
+
+em {
+	font-style: italic;
+}
+
+em.name, em.dtelab {
+	font-style: normal;
+	font-variant-caps: small-caps;
+}
+
+em.math {
+	font-family: math, serif;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.home img {
+	height: 1.3em;
+}
+
+img.lablogo {
+	height: 0.8em;
+}
+
+img.bibtex {
+	height: 0.8em;
+}
+
+aside {
+	margin: 1em 0px;
+	padding: 4px;
+	background-color: #FFDADA;
+	text-align: right;
+}
+
+@media (min-width: 800px) {
+	aside {
+		float: right;
+		margin-left: 1em;
+		max-width: min(600px, 100%);
+	}
+}
+
+aside figure, aside img, aside figcaption {
+	margin: 0px;
+	padding: 0px;
+}
+
+aside figure img {
+	width: 100%;
+}
+
+aside.splash {
+	float: none;
+	max-width: min(800px, 100%);
+	margin: 1em auto;
+	text-align: center;
+}
+
+aside.splash img {
+	margin: 2px;
+	padding: 4px;
+	background-color: #FFEAEA;
+	width: calc(100% - 12px);
+}
+
+aside figure figcaption {
+	font-size: small;
+	font-style: italic;
+}
+
+figcaption em {
+	font-style: normal;
+}
+
+.ref .detail quote {
+	font-style: italic;
+}
+
+nav {
+	display: block;
+	text-align: center;
+	width: calc(100%);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+nav ul {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li {
+	display: inline;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+nav ul li a {
+	border: 0px;
+	margin: 0px;
+	padding: 0px 10px;
+}
+
+a.menu:hover {
+	background-color: #FFEAEA;
+}
+
+table.person, .person tr, .person td {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+table.person td {
+	display: inline-block;
+}
+
+.person img {
+	border: solid 0px;
+	margin-right: 1em;
+	border-radius: 10px;
+	height: 7em;
+	width: auto;
+}
